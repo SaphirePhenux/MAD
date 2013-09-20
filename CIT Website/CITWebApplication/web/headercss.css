@@ -1,0 +1,28 @@
+/* 
+    Document   : 1sttestcss-scratch
+    Created on : Oct 29, 2012, 10:35:23 AM
+    Author     : Andrew
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+div#nav_menu {
+    width: 900px;
+    line-height: 78px;
+}
+div#header{}
+div#body{}
+div#footer{}
+.colimg{}
+.colmenu{}
+.headertitle{}
+.menumotto{}
+.menulinks{}
+.icon{
+    
+}
+

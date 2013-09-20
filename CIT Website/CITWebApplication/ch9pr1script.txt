@@ -1,0 +1,29 @@
+CH 9 Program 1
+<script>
+function getYear()
+{
+var name = document.getElementById('Name').value;
+var credits = document.getElementById('Cred').value;
+var year;
+
+if (credits >= 0 && credits < 30)
+{
+year = 'Freshman';
+}
+else if (credits >= 30 && credits < 60)
+{
+year = 'Sophomore';
+}
+else if (credits >= 60 && credits < 90)
+{
+year = 'Junior';
+}
+else if (credits >= 90)
+{
+year = 'Senior';
+}
+document.getElementById("Display").innerHTML = "Student's Name: " + name + "<br>" +
+"Student's year: " + year;
+
+}
+</script>

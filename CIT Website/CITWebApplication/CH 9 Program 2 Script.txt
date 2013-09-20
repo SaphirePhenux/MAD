@@ -1,0 +1,25 @@
+CH 9 Program 2 Script
+<script>
+function checkSales ()
+{
+var subtotal = document.getElementById('amount').value*1;
+var Day = new Date().getDay();
+
+if (subtotal > 50 && Day = 2 || 3)
+{
+subtotal *= .9;
+}
+else if (subtotal != Number)
+{
+document.getElementById("Display").innerHTML = "Please enter a number!";
+}
+else {
+subtotal *= 1;
+}
+
+var total = subtotal * 1.06;
+
+document.getElementById("Display").innerHTML = "The total amount is: " + total;
+}
+</script>
+

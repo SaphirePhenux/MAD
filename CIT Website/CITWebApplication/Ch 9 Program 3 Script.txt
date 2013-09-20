@@ -1,0 +1,43 @@
+Ch 9 Program 3 Script
+<script>
+function getNumDays()
+{
+var month = document.getElementById('Mon').value;
+<!-- var year = document.getElementById('YR').value; -->
+var days;
+<!-- days = 0;-->
+
+/* checking for the month */
+
+if (month == 'January' || month == 'Jan&' || month == 'Mar%' || month == 'May' || month == 'July' || month == 'Aug%' || month == 'Oct%' || month == 'Dec%')
+{
+days = 31; <!-- document.getElementById("display").innerHTML = "There are 31 days in this month."; -->
+}
+else if (month == 'Apr%' || month == 'June' || month == 'Sept%' || month == 'Nov%')
+{
+days = 30; <!-- document.getElementById("display").innerHTML = "There are 30 days in this month."; -->
+}
+else if (month == 'Feb%')
+{
+days = '28 or 29 days'; <!-- document.getElementById("display").innerHTML = "There are 28 or 29 days in this month."; -->
+}
+/* could have done 31's, feb, and finished with an else {statement} */
+
+<!-- if (month == 'Feb%' || month == 'Feburary')
+{
+if (year % 400 == 0) {
+days = 29;<!-- document.getElementById("display").innerHTML = "There are 29 days in this month."; -->
+}
+else if (year % 100 == 0) {
+days = 28;<!-- document.getElementById("display").innerHTML = "There are 28 days in this month."; -->
+}
+else if (year % 4 == 0) {
+days = 29;<!-- document.getElementById("display").innerHTML = "There are 29 days in this month."; -->
+}
+else {
+days = 28;<!-- document.getElementById("display").innerHTML = "There are 28 days in this month."; -->
+}
+} -->
+document.getElementById("display").innerHTML = "This month has " + days + "days.";
+}
+</script>

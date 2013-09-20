@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Example</title>
+<script></script>
+</head>
+<body>
+</body>
+</html>
+[here is my list of forms]
+____________________________________________
+<script>
+function getInput() {
+ var name = document.nameage.who.value;
+  var age = document.nameage.digits.value;
+ document.getElementById("display").innerHTML = "Your name is " + name;
+ document.getElementById("display2").innerHTML = "Your age is " + age;
+  }
+</script>
+<body>
+<form name="nameage">
+Please enter your name: <input type="text" name="who">
+<p>Please enter your age: <input type="text" name="digits"></p>
+<p><button type="button" onclick="getInput()">Show Info</button></p>
+</form>
+<p><div id='display'></div>
+<p><div id='display2'></div>
+</body>
+--------------------------------------------------
+<script>
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+</script>
+
+</head>
+
+<body>
+<p id="demo"></p>
+	<button type="button" onclick="displayDate()">Display Date</button>
+
+</body>
+</html>
+_____________________________________________________________
+<script>
+ function doStuff(){
+  document.getElementById("display").innerHTML = "hey man! What’s up?";
+}
+//
+</script>
+</head>
+<body>
+<button onclick="doStuff()" >click me!!</button>
+<div id='display'></div>
+
+</body>
+----------------------------------------------------------
+<script>
+ function doStuff(){
+  document.getElementById("display").innerHTML = "<img src='pulley.JPG' />";
+}
+//"hey man! What’s up?";
+</script>
+</head>
+<body>
+<button onclick="doStuff()" >click me!!</button>
+<div id='display'></div>
+
+</body>
+____________________________________________________________
+<script>
+ function doStuff(){
+ var anAgeInputBox = document.getElementById('ageInput');
+ var age = anAgeInputBox.value;
+ var halfAge = age/2;
+ document.getElementById("display").innerHTML = "half = "+halfAge;
+  }
+</script>
+</head>
+<body>
+<input id='ageInput' />
+<button onclick="doStuff()" >click me!!</button>
+<div id='display'></div>
+
+</body>
+----------------------------------------------------------------
+<meta charset="utf-8">
+<title>An Example</title>
+
+<script type="text/Javascript">
+function sayCheese() {
+	window.alert("cheese");
+}
+</script>
+
+</head>
+
+<body>
+
+	<form> <button type="button" onclick="sayCheese()">Say Cheese</button>
+	
+	</form>
+
+</body>
+______________________________________________________________________
+<script type="text/Javascript">
+window.alert("Java is great!");
+</script>
+// could be <script> alert.("java");</script>
+//
+//
+</head>
+<body>
+</body>
+----------------------------------------------------

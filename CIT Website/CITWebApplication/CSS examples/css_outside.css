@@ -1,0 +1,392 @@
+
+/*===============================================
+            BELOW IS THE MAIN SETUP
+=================================================*/
+
+
+  
+  body
+    {
+      background-color: #303030;
+    }
+
+  div#page
+    {
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: .1px;
+    }
+
+  div#header
+    {
+      width: 900px;
+      height: 145px;
+      border-color: #303030;
+      border-style: solid;
+      border-width: 1px;
+      font-size: 115%;
+      text-indent: 730px;
+      color: #ddddcc;
+    }
+
+  #pic
+    {
+      width: 100%; 
+      background-image: url(_pictures/pic.png);
+      background-repeat: no-repeat;
+      margin: 0%
+    }
+
+  div#nav
+    {
+      width: 900px;
+      line-height: 30px;
+      border-left-color: #000000;
+      border-left-style: solid;
+      border-left-width: 1px;       
+      border-right-color: #000000;
+      border-right-style: solid;
+      border-right-width: 1px; 
+      border-bottom-color: #000000;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+  div#content
+    {
+      width: 900px;
+      height: 90%;
+      border-left-color: #000000;
+      border-left-style: solid;
+      border-left-width: 1px;       
+      border-right-color: #000000;
+      border-right-style: solid;
+      border-right-width: 1px; 
+      border-bottom-color: #000000;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      background-color: #454545;
+      padding-bottom: 25px;
+      float: left;
+    }
+
+  div#contentheader
+
+    {
+      text-align: center;
+      width: 900px;
+      line-height: 50px;
+      padding-top: 10px;
+      border-color: #000000;
+      border-top-style: solid;
+      border-width: 1px;
+      text-transform: capitalize;	  
+    }
+
+  div#leftcolumn
+    {
+      width: 43%;
+      float: left;
+      margin: 7px 0px 0% 3%;
+      border-color: #000000;
+      border-style: groove;
+      border-width: 3px;
+      background-color: #707070;
+      padding: 15px 7px 15px 7px;
+    }
+
+  div#rightcolumn
+    {
+      width: 43%;
+      float: right;
+      margin: 7px 3% 0% 0px;
+      border-color: #000000;
+      border-style: ridge;
+      border-width: 3px;
+      background-color: #707070;
+      padding: 15px 7px 15px 7px;
+    }
+
+  div#footer
+    {
+      width: 900px;
+      line-height: 30px;
+      border-left-color: #000000;
+      border-left-style: solid;
+      border-left-width: 1px;       
+      border-right-color: #000000;
+      border-right-style: solid;
+      border-right-width: 1px; 
+      border-bottom-color: #000000;
+      border-bottom-style: solid;
+      border-bottom-width: 1px; 
+      background-color: #404040;
+      text-align: center;
+      text-transform: uppercase;
+      color: #DD8800;
+}
+
+
+
+
+/*===============================================
+            END OF THE MAIN SETUP
+=================================================*/
+
+
+/*===============================================
+            BELOW IS THE MISCELLANEOUS SETUP
+=================================================*/
+ 
+
+
+
+  div#onebox
+    {
+      width: 92%;
+      height: 85%;
+      margin-top: 1%;
+      margin-left: 3%;
+      border-color: #000000;
+      border-style: ridge;
+      border-width: 3px;
+      padding: 7px; 
+      background-color: #707070;
+      padding-bottom: 25px;
+    }
+
+  a 
+    {
+      text-decoration: none;
+    }
+
+  a:link
+    {
+      color: #DDCC00;
+    }
+
+  a:visited
+    {
+      color: #DDCC00;
+    }
+
+  a:active
+    {
+      color: #FFFFFF;
+    }
+
+  p
+    {
+      margin: 0px;
+      padding: 0px;
+    }
+
+  h4
+    {
+      text-align: center;	  
+    }
+
+
+
+/*===============================================
+            END OF THE MISCELLANEOUS SETUP
+=================================================*/
+
+
+/*===============================================
+             BELOW IS THE NAVIGATION
+=================================================*/
+
+
+
+  li:hover ul, li.over ul
+    {
+       display: block;
+    }
+
+
+  li ul 
+    {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+    }
+
+/* style the outer div to give it width */
+  .menu 
+    {
+      width:900px; 
+      font-size:0.85em;
+      padding-bottom:30px;
+    }
+
+/* remove all the bullets, borders and padding from the default list styling */
+  .menu ul 
+    {
+      padding:0;
+      margin:0;
+      list-style-type:none;
+    }
+
+/* float the list to make it horizontal and a relative positon so that you can control the   dropdown menu positon */
+  .menu li
+    {
+      float:left;
+      width:180px;
+      position:relative;
+    }
+
+/* style the links for the top level */
+  .menu a, .menu a:visited
+    {
+      display:block;
+      text-align: center;
+      font-size:12px;
+      font-family: cursive, serif;
+      text-decoration:none;
+      text-transform: uppercase;
+      color:#ffffff; 
+      width:169px; 
+      height:30px; 
+      border:1px solid #ffffff; 
+      border-width:1px 1px 0 0; 
+      background:#797974; 
+      padding-left:10px; 
+      line-height:29px;
+    }
+
+/* a hack so that IE5.5 faulty box model is corrected */
+  *html .menu a, *
+  html .menu a:visited 
+    {
+      width:180px;
+      w\idth:169px;
+    }
+
+/* style the second level background */
+  .menu ul ul a.drop, .menu ul ul a.drop:visited
+    {
+      background:#949e7c;
+    }
+
+/* style the second level hover */
+  .menu ul ul a.drop:hover
+    {
+      background:#c9ba65;
+    }
+
+  .menu ul ul :hover > a.drop
+    {
+      background:#c9ba65;
+    }
+
+/* style the third level background */
+  .menu ul ul ul a, .menu ul ul ul a:visited
+    {
+      background:#fcc625;
+    }
+
+/* style the third level hover */
+  .menu ul ul ul a:hover
+    {
+      background:#b2ab9b;
+    }
+
+
+  .menu ul ul ul :hover > a
+    {
+      background:#d2cb9b;
+    }
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+  .menu ul ul
+    {
+      visibility:hidden;
+      position:absolute;
+      height:0;
+      top:31px;
+      left:0px; 
+      width:180px;
+    }
+
+/* another hack for IE5.5 */
+   * html .menu ul ul
+    {
+      top:30px;
+      t\op:31px;
+    }
+
+/* position the third level flyout menu */
+  .menu ul ul ul
+    {
+      left:191px; 
+      top:0;
+      width:180px;
+    }
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+  .menu table
+    {
+      position:absolute;
+      top:0;
+      left:0;
+    }
+
+/* style the second level links */
+  .menu ul ul a, .menu ul ul a:visited
+    {
+      background:#d4d8bd; 
+      color:#000000;
+      line-height: 1.5em; 
+      height:1.5em; 
+      padding:5px 10px; 
+      width:170px; 
+    }
+
+/* yet another hack for IE5.5 */
+    }
+    * html .menu ul ul a{
+      width:150px;
+      w\idth:129px;
+    }
+
+
+/* style the top level hover */
+  .menu a:hover, .menu ul ul a:hover
+    {
+      color: #ffffff; 
+      background: #fafaa2;
+    }
+
+.menu :hover > a, .menu ul ul :hover > a
+    {
+      color: #000000;
+    }
+
+/* make the second level visible when hover on first level list OR link */
+  .menu ul li:hover ul,
+  .menu ul a:hover ul
+    {
+      visibility: visible; 
+    }
+
+/* keep the third level hidden when you hover on first level list OR link */
+  .menu ul :hover ul ul
+    {
+      visibility: hidden;
+    }
+
+/* make the third level visible when you hover over second level list OR link */
+  .menu ul :hover ul :hover ul
+    { 
+      visibility: visible;
+    }
+
+
+
+/*===============================================
+             END OF THE NAVIGATION
+=================================================*/
+
