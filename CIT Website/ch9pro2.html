@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sales</title>
+<script>
+function checkSales()
+{
+var subtotal = document.getElementById('amount').value*1;
+var Day = new Date().getDay();
+alert(Day)
+if (subtotal > 50 && (Day == 2 || Day == 3))
+{
+subtotal *= .9;
+}
+else if (subtotal != Number)
+{
+document.getElementById("display").innerHTML = "Please enter a number!";
+}
+else {
+subtotal *= 1;
+}
+
+var total = subtotal * 1.06;
+var end = total.toFixed(2);
+// could do total = total.toFixed(2);
+// var subtotal *= 1.06;
+// var total = subtotal.toFixed(2);
+
+document.getElementById("display").innerHTML = "The total amount is: $" + end;
+}
+</script>
+</head>
+<body>
+Please Enter the Subtotal: $<input id = 'amount' /><br>
+<button onclick = 'checkSales()'>check for discount and get the total</button><br>
+<div id = 'display'></div>
+</body>
+</html>

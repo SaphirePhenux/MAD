@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fib with While Loop</title>
+<script>
+function fibTest()
+{
+//testing with a while loop.............................
+	//while vars..:
+	var countw = 0;
+	var prev1 = 1;
+	var last1 = 0;
+	//var z = prev1 + last1;
+	var resultW = '';
+	//var zlast;
+//while loop...
+	while (countw < 25) {
+		if (countw == 0) {
+			resultW += prev1 + ", ";
+			countw++;
+			//last1 = prev1; //might take this out...
+		}
+		else if (countw < 24) {
+			
+			//resultW += z + ", ";
+			resultW += (prev1 + last1) + ", ";
+			last1 += last1;
+			//zlast = z;
+			countw++;
+		}
+		else {
+			//resultW += zlast;
+			resultW += last1;
+		}
+	
+	}
+// ...................end the test area here....................
+document.getElementById('display').innerHTML = "OK! Here it is: " + resultW;	
+}
+</script>
+</head>
+<body>
+<!--randomly fun text -->
+Want to see a Fibanacci Sequence?!! 
+<button onclick='fibTest()'>YES!! SHOW ME!!</button><br>
+<div id='display'>"Look Right Here!!"</div>
+</body>
+</html>

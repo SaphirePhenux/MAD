@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Days in a Month</title>
+<script>
+function getNumDays()
+{
+var month = document.getElementById('Mon').value;
+var year = document.getElementById('YR').value;
+var days;
+/* checking for the month */
+
+var excerpt = month.substr(0,3)
+var practice = excerpt.toLowerCase()
+
+if (practice == 'jan' || practice == 'mar' || practice == 'may' || practice == 'jul' || practice == 'aug' || practice == 'oct' || practice == 'dec') {
+	days = 31;
+}
+else if (practice == 'feb') {
+	/*checking for a leap year*/
+	if (year % 400 == 0) {
+	days = 29;<!-- document.getElementById("display").innerHTML = "There are 29 days in this month."; -->
+	}
+	else if (year % 100 == 0) {
+	days = 28;<!-- document.getElementById("display").innerHTML = "There are 28 days in this month."; -->
+	}
+	else if (year % 4 == 0) {
+	days = 29;<!-- document.getElementById("display").innerHTML = "There are 29 days in this month."; -->
+	}
+	else {
+	days = 28;<!-- document.getElementById("display").innerHTML = "There are 28 days in this month."; -->
+	}
+}
+else if (practice == 'apr' || practice == 'jun' || practice == 'sep' || practice == 'nov') {
+	days = 30;
+}
+/* else { document.getElementById("display").innerHTML = "Please Enter A  Month!"; } */
+document.getElementById("display").innerHTML = "This month has " + days + " days.";
+}
+
+</script>
+</head>
+<body>
+<p>Please Enter a Month: <input id = 'Mon' />
+<p>Please Enter a Year: <input id = 'YR' />
+<p><button onclick = 'getNumDays()' >Find out the Number of Days in the Month</button>
+<div id = 'display'></div><br>
+</body>
+</html>

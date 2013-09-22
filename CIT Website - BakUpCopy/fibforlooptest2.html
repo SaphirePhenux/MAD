@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fib with FOR Loop</title>
+<script>
+function ForLoop()
+{
+//testing with a FOR loop.............................
+
+//FOR vars:--------------------------------------
+	var x1 = 0;
+	var y1 = 1;
+	var countF = 0;
+	var resultF = '';
+	
+//FOR loop:-----------------------------------------
+	for (countF; countF < 25; countF++)
+	{
+		if (countF == 0 && countF < 1) 
+		{
+			resultF += x1 + ", ";
+			x1 = 1;
+		}
+		<!--- 	else if (x1 = y1) {	resultF += y1 + ", ";	y1 += y1;	}	--->
+		else if (countF > 0 && countF < 24) 
+		{
+			resultF += (x1+y1) + ", ";
+			x1 = (y1-1);
+			y1 += y1;
+		}
+		else {
+			resultF += y1;
+		}
+	}
+// ...................end the test area here....................
+document.getElementById('display').innerHTML = "OK! Here it is: " + resultF;	
+}
+</script>
+</head>
+<body>
+<!--randomly fun text -->
+Want to see a Fibanacci Sequence?!! 
+<button onclick='ForLoop()'>YES!! SHOW ME!!</button><br>
+<div id='display'>"Look Right Here!!"</div>
+</body>
+</html>

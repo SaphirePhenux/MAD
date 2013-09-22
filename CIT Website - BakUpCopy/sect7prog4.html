@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Example</title>
+<script>
+ function doStuff(){
+ var startmilesBox = document.getElementById('startmiles');
+ var endmilesBox = document.getElementById('endmiles');
+ var gasusedBox = document.getElementById('gasused');
+ var start = startmilesBox.value;
+ var end = endmilesBox.value;
+ var gas = gasusedBox.value;
+ var milage = (end - start) / gas;
+ document.getElementById("display").innerHTML = "Your milage is: " + milage + ".";
+  }
+</script>
+</head>
+<body>
+Starting Milage<input id='startmiles' /><br>
+Ending Milage<input id='endmiles' /><br>
+Gas Used<input id='gasused' /><br>
+<button onclick="doStuff()" >Your Milage</button>
+<div id='display'></div>
+
+</body>
+</html>

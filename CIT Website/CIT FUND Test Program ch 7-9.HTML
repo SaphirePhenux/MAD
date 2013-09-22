@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Pay Finder</TITLE>
+<SCRIPT>
+function getPay()
+{
+	var wage = document.getElementById('perhour').value*1;
+	var hours = document.getElementById('time').value*1; 
+	
+	var net = (wage * hours) * .85;
+	net = net.toFixed(2);
+	
+	document.getElementById("display").innerHTML = "Your net pay is : $" + net + "!";
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+Please Enter your hourly rate: <input id = 'perhour' /><BR>
+Please Enter your hours: <input id = 'time' /><BR>
+<button onclick = 'getPay()'>Compute Your Net Pay</button><BR>
+<DIV id = 'display'></DIV>
+</BODY>
+</HTML>

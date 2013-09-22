@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Write a Math Problem</title>
+<script>
+function computeMath()
+{
+	var x = document.getElementById('varx').value*1;
+	var mathop = document.getElementById('math').value;
+	var y = document.getElementById('vary').value*1;
+	var guess = document.getElementById('varguess').value;
+	if (mathop == '+') {
+		var answer = x + y;
+	}
+	else if (mathop == '-') {
+		var answer = x - y;
+	}
+	else if (mathop == '*') {
+		var answer = x * y;
+	}
+	else if (mathop == '/') {
+		var answer = x / y; 
+	}
+	else {
+		document.getElementById("tested").innerHTML = "Please enter a math operator!";
+	}
+	alert(answer + " " + guess)
+	if (answer == guess) {
+		document.getElementById("tested").innerHTML = "Correct! Good job.";
+	}
+	else {
+		document.getElementById("tested").innerHTML = "Incorrect. Try Again.";
+	}
+
+}
+
+</script>
+</head>
+<body>
+Please Enter a Number:<input id='varx' /><br>
+Please Enter a Math Operator(+, -, *, or /):<input id='math' /><br>
+Please Enter a Number:<input id='vary' /><br>
+Please Enter Your Answer:<input id='varguess' /><br>
+<button onclick="computeMath()" >Check your Answer</button><br>
+<div id='tested'></div>
+</body>
+</html>

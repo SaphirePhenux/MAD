@@ -1,0 +1,34 @@
+var example = string.toUpperCase()
+var example = string.toLowerCase()
+
+if (month == 'January' || month == 'Jan' || month == 'jan' ||
+month == 'Mar' || month == 'March' || month == 'mar' ||
+month == 'May' || month == 'may' || 
+month == 'Jul' || month == 'July' || month == 'jul' ||
+month == 'Aug' || month == 'August' ||  month == 'aug' ||
+month == 'Oct' || month == 'October' || month == 'oct' ||
+month == 'Dec' month == 'December' ||  month == 'dec')
+||       
+
+
+------------------strings-------------------
+  var stringA = "Example"
+var result = stringA.charAt(1&&2&&3)
+
+// string.substring
+var stringA = "Example"
+var excerpt = stringA.substring(0.4)
+
+var check = month.substring(0.4)
+check = string.toLowerCase()
+if (check = 'jan' || 'mar' || 'may' || 'jul || 'aug' || 'oct' || 'dec') {
+days = 31;
+}
+
+else if (check = 'feb') {
+days = "28 or 29 days";
+}
+
+else if (check = 'apr' ||'jun' || 'sep' || 'nov') {
+days = 30;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Example</title>
+<script>
+function armyoftwo()
+{
+	var N = 0;
+	for (N; N < 32; N++)
+		if (N < 31)
+			document.getElementById('display').innerHTML += Math.pow(2, N) + ", ";
+		else
+			document.getElementById('display').innerHTML += Math.pow(2, N);
+
+}
+</script>
+</head>
+<body>
+Who wants to see 2^n from 0 to 31?<br>
+<button onclick = 'armyoftwo()'>ME!</button><BR>
+<div id = 'display'></div>
+</body>
+</html>

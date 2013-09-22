@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Days in a Month</title>
+<script>
+function getNumDays()
+{
+var month = document.getElementById('Mon').value;
+<!-- var year = document.getElementById('YR').value; -->
+var days;
+/* checking for the month */
+//var sect = month.substring(1,3)
+//alert(sect)
+
+var excerpt = month.substr(0,3)
+var practice = excerpt.toLowerCase()
+alert(practice + " " + excerpt)
+//alert(excerpt)
+/*if (excerpt = 'jan' || 'feb') {
+days = 31;
+document.getElementById("display2").innerHTML = "31 days";
+}
+*/
+/*
+var excerpt = month.substring(0.4)
+var check1 = month.toLowerCase()
+var check2 = check1.substring(0.4)
+var que = month.substring(0.3)
+alert(check2 + " " + que + " " + excerpt)
+*/
+if (practice == 'jan' || practice == 'mar' || practice == 'may' || practice == 'jul' || practice == 'aug' || practice == 'oct' || practice == 'dec') {
+days = 31;
+}
+else if (practice == 'feb') {
+days = '28 or 29 days';
+}
+else if (practice == 'apr' || practice == 'jun' || practice == 'sep' || practice == 'nov') {
+days = 30;
+}
+
+// document.write(excerpt)
+/* could have done 31's, feb, and finished with an else {statement} */
+document.getElementById("display").innerHTML = "This month has " + days + " days.";
+}
+
+</script>
+</head>
+<body>
+<p>Please Enter a Month: <input id = 'Mon' />
+<!-- <p>Please Enter a Year: <input id = 'YR' /> -->
+<p><button onclick = 'getNumDays()' >Find out the Number of Days in the Month</button>
+<div id = 'display'></div><br>
+<!-- <div id = 'display2'></div> -->
+</body>
+</html>

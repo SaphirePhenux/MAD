@@ -1,0 +1,25 @@
+<!DOCTYPE Html>
+<HTML>
+<HEAD>
+<TITLE>Counting Backwards!!</TITLE>
+<SCRIPT>
+function countdown()
+{
+	var N = document.getElementById('NUM').value*1;
+	var shownint = '';
+	
+	for (N; N > 1; N--)
+	{
+		shownint += N + ", ";
+	}	
+	document.getElementById('display').innerHTML = shownint + "1";
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+What to see me count backwards?<br>
+Then put in a number and hit 'GO!'!<BR>
+<input id ='NUM' /><button onclick='countdown()'>GO!</button><BR>
+<div id = 'display'></div>
+</BODY>
+</HTML>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Example</title>
+<script>
+function showme()
+{
+	var message = 
+		"I'm think if a number between 1 and 100.\n" +
+		"Try to guess it!\n" +
+		"Please enter an integer between 1 and 100.";
+	document.getElementById('output').innerHTML = message;
+}
+function guessGame()
+{
+	<!-- var message = "I'm think if a number between 1 and 100.\n" + "Try to guess it!\n" + "Please enter an integer between 1 and 100."; -->
+	<!-- var message = ''; -->
+	var answer = 38;
+	var guess;
+	var count = 0;
+	guess = document.getElementById('getNum').value*1;
+	<!-- document.getElementById('output').innerHTML = message; -->
+	do {
+		<!-- document.getElementById('output').innerHTML = message; -->
+		<!-- guess = document.getElementById('getNum').value*1; -->
+		//guess = parseInt(window.prompt(message)); //doc.getEleById.innerHTMl = message; guess = doc.getelebyid(getNum).value*1;
+		if (guess < answer) {
+			count++;
+			document.getElementById('display').innerHTML = guess + "is too low. Please enter another integer.";
+		}
+		else if (guess > answer) {
+			count++;
+			document.getElementById('display').innerHTML = guess + "is too high. Please enter another integer.";
+		}
+	} while (guess != answer);
+	count++;
+	document.getElementById('display').innerHTML = guess + "is correct!" + "And it only took you " + count + " guesses to figure it out!";
+	//window.alert(message); //doc.getEleById(display).innerhtml = message + " And it only took you " + count + " guesses to figure it out!";
+}
+</script>
+</head>
+<body onload='showme()'>
+<div id='output'></div><br>
+<input id = 'getNum' />
+<button onclick='guessGame()'>Run the Game</button><br>
+<div id = 'display'></div>
+</body>
+</html>

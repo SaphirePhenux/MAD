@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Example</title>
+<script>
+ function doStuff(){
+ var hoursBox = document.getElementById('empHours');
+ var wageBox = document.getElementById('empWage');
+ var hour = hoursBox.value;
+ var wage = wageBox.value;
+ var taxrate = .15;
+ var tax = taxrate * grosspay;
+ var grosspay = hour * wage;
+ var netpay = grosspay * .85;
+ document.getElementById("display").innerHTML = "Your Net Pay is: " + netpay + ".";
+  }
+</script>
+</head>
+<body>
+Employee's Hours:<input id='empHours' /><br>
+Employee's Wage:<input id='empWage' /><br>
+
+<button onclick="doStuff()" >Calculate Net Pay</button>
+<div id='display'></div>
+
+</body>
+</html>

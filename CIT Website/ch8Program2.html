@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Find the Roman Numeral</title>
+<script>
+function romanNumeral()
+{
+	var year = document.getElementById('theyear').value*1;
+	
+	var romanText = "";
+	
+	if (year >= 3000) {
+		romanText += 'MMM';
+		year -= 3000;
+	}
+	else if (year >= 2000) {
+		romanText += 'MM';
+		year -= 2000;
+	}
+	else if (year > 1000) {
+		romanText += 'M';
+		year -= 1000
+	}
+	
+	if (year >= 900) {
+		romanText += 'CM';
+		year -= 900;
+	}
+	else if (year >= 800) {
+		romanText += 'DCCC';
+		year -= 800;
+	}
+	else if (year >= 700) {
+		romanText += 'DCC';
+		year -= 700;
+	}
+	else if (year >= 600) {
+		romanText += 'DC';
+		year -= 600;
+	}
+	else if (year >= 500) {
+		romanText += 'D';
+		year -= 500;
+	}
+	else if (year >= 400) {
+		romanText += 'CD';
+		year -= 400;
+	}
+	else if (year >= 300) {
+		romanText += 'CCC';
+		year -= 300;
+	}
+	else if (year >= 200) {
+		romanText += 'CC';
+		year -= 200;
+	}
+	else if (year >= 100) {
+		romanText += 'C';
+		year -= 100;
+	}
+
+	if (year >= 90) {
+		romanText += 'XC';
+		year -= 90;
+	}
+	else if (year >= 80) {
+		romanText += 'LXXX';
+		year -= 80;
+	}
+	else if (year >= 70) {
+		romanText += 'LXX';
+		year -= 70;
+	}	
+	else if (year >= 60) {
+		romanText += 'LX';
+		year -= 60;
+	}	
+	else if (year >= 50) {
+		romanText += 'L';
+		year -= 50;
+	}	
+	else if (year >= 40) {
+		romanText += 'XL';
+		year -= 40;
+	}
+	else if (year >= 30) {
+		romanText += 'XXX';
+		year -= 30;
+	}
+	else if (year >= 20) {
+		romanText += 'XX';
+		year -= 20;
+	}
+	else if (year >= 10) {
+		romanText += 'X';
+		year -= 10;
+	}
+	
+	if (year >= 9) {
+		romanText += 'IX';
+	}
+	else if (year >= 8) {
+		romanText += 'VIII'; 
+	}
+	else if (year >= 7) {
+		romanText += 'VII'; 
+	}
+	else if (year >= 6) {
+		romanText += 'VI'; 
+	}
+	else if (year >= 5) {
+		romanText += 'V'; 
+	}
+	else if (year >= 4) {
+		romanText += 'IV'; 
+	}
+	else if (year >= 3) {
+		romanText += 'III'; 
+	}
+	else if (year >= 2) {
+		romanText += 'II'; 
+	}
+	else if (year >= 1){
+		romanText += 'I'; 
+	}	
+	
+document.getElementById("RomanYear").innerHTML = romanText;	
+}
+
+</script>
+</head>
+<body>
+Please enter a Year: <input id='theyear' /><br>
+<button onclick="romanNumeral()" >Convert to Roman Numerals</button><br>
+<div id='RomanYear'></div>
+</body>
+</html>

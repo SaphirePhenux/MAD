@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Example</title>
+<script>
+function getNum()
+{
+	var x = document.getElementById('NumX').value*1;
+	
+	for (var i = x; i < (2 * x); i++) {
+	document.getElementById('display').innerHTML = "i is equal to " + i + ".";
+	}
+
+}
+</script>
+</head>
+<body>
+Enter A number: <input id='NumX' /><BR>
+<button onclick = "getNum()"> Find i </button><BR>
+<div id = 'display'></div>
+</body>
+</html>

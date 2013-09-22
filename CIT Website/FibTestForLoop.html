@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fib with FOR Loop</title>
+<script>
+// this funtion currently does a binary sequence..... why?
+function fibTest()
+{
+//testing with a FOR loop.............................
+
+//FOR vars:--------------------------------------
+	var prev1 = 0;
+	var last1 = 1;
+	var countF = 0;
+	var resultF = '';
+	//var z = prev1 + last1;
+	//var zlast;
+	
+//FOR loop:-----------------------------------------
+	for (countF; countF < 25; countF++)
+	{
+		if (countF == 0 && countF < 1) {
+			resultF += prev1 + ", ";
+			prev1 = last1;
+		}
+		else if (countF != 0 && countF => 1 && countF < 24) 
+		{
+			resultF += (prev1 + last1) + ", ";
+			last1 += last1;
+		}
+		else {
+			resultF += last1;
+		}
+	}
+// ...................end the test area here....................
+document.getElementById('display').innerHTML = "OK! Here it is: " + resultF;	
+}
+</script>
+</head>
+<body>
+<!--randomly fun text -->
+Want to see a Fibanacci Sequence?!! 
+<button onclick='fibTest()'>YES!! SHOW ME!!</button><br>
+<div id='display'>"Look Right Here!!"</div>
+</body>
+</html>
